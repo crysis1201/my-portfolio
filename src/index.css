@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('http://fonts.cdnfonts.com/css/bastian-sidney');
+.profile {
+    box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.16);
+    border: solid 5px #101010;
+}
+.Rectangle-2 {
+    
+    border-radius: 8px;
+    box-shadow: -4px -4px 10px 0 rgba(0, 0, 0, 0.7);
+    border: solid 4px #1a1a1a;
+  }
+
+#body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+#logo {
+    font-family: 'Bastian Sidney', sans-serif;
+}
