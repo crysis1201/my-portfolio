@@ -5,7 +5,7 @@ const Home = () => {
        <div id="Home" className="max-w-screen-lg mx-auto pt-12" >
           <header className="flex justify-between">
               <div>
-                <p id="logo" className="text-6xl tracking-wider text-white" >
+                <p id="logo" className="lg:text-6xl text-5xl tracking-wider text-white" >
                   Eazhil amuthan
                 </p>
               </div>
