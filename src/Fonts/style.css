@@ -1,0 +1,10 @@
+    @font-face {
+    font-family: 'Bastian Sidney Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Bastian Sidney Regular'), url('Bastian Sidney.woff') format('woff');
+    }
+
+    #logo {
+        font-family:'Bastian Sidney Regular'
+    }
