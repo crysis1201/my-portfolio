@@ -1,24 +1,25 @@
 {
   "files": {
-    "main.css": "./static/css/main.27a1fcfc.chunk.css",
-    "main.js": "./static/js/main.78fd46b3.chunk.js",
-    "main.js.map": "./static/js/main.78fd46b3.chunk.js.map",
-    "runtime-main.js": "./static/js/runtime-main.27220619.js",
-    "runtime-main.js.map": "./static/js/runtime-main.27220619.js.map",
-    "static/js/2.610600bc.chunk.js": "./static/js/2.610600bc.chunk.js",
-    "static/js/2.610600bc.chunk.js.map": "./static/js/2.610600bc.chunk.js.map",
-    "static/js/3.b5377dce.chunk.js": "./static/js/3.b5377dce.chunk.js",
-    "static/js/3.b5377dce.chunk.js.map": "./static/js/3.b5377dce.chunk.js.map",
-    "index.html": "./index.html",
-    "static/css/main.27a1fcfc.chunk.css.map": "./static/css/main.27a1fcfc.chunk.css.map",
-    "static/js/2.610600bc.chunk.js.LICENSE.txt": "./static/js/2.610600bc.chunk.js.LICENSE.txt",
-    "static/media/Homepage@2x.9718b9a2.jpg": "./static/media/Homepage@2x.9718b9a2.jpg",
-    "static/media/IMG_7243.fed8911b.png": "./static/media/IMG_7243.fed8911b.png"
+    "main.css": "/my-project/static/css/main.35aadc53.chunk.css",
+    "main.js": "/my-project/static/js/main.9d0aba8f.chunk.js",
+    "main.js.map": "/my-project/static/js/main.9d0aba8f.chunk.js.map",
+    "runtime-main.js": "/my-project/static/js/runtime-main.a1312f48.js",
+    "runtime-main.js.map": "/my-project/static/js/runtime-main.a1312f48.js.map",
+    "static/js/2.610600bc.chunk.js": "/my-project/static/js/2.610600bc.chunk.js",
+    "static/js/2.610600bc.chunk.js.map": "/my-project/static/js/2.610600bc.chunk.js.map",
+    "static/js/3.62c43069.chunk.js": "/my-project/static/js/3.62c43069.chunk.js",
+    "static/js/3.62c43069.chunk.js.map": "/my-project/static/js/3.62c43069.chunk.js.map",
+    "index.html": "/my-project/index.html",
+    "static/css/main.35aadc53.chunk.css.map": "/my-project/static/css/main.35aadc53.chunk.css.map",
+    "static/js/2.610600bc.chunk.js.LICENSE.txt": "/my-project/static/js/2.610600bc.chunk.js.LICENSE.txt",
+    "static/media/style.css": "/my-project/static/media/Bastian Sidney.6323a9e8.woff",
+    "static/media/Homepage@2x.9718b9a2.jpg": "/my-project/static/media/Homepage@2x.9718b9a2.jpg",
+    "static/media/IMG_7243.fed8911b.png": "/my-project/static/media/IMG_7243.fed8911b.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.27220619.js",
+    "static/js/runtime-main.a1312f48.js",
     "static/js/2.610600bc.chunk.js",
-    "static/css/main.27a1fcfc.chunk.css",
-    "static/js/main.78fd46b3.chunk.js"
+    "static/css/main.35aadc53.chunk.css",
+    "static/js/main.9d0aba8f.chunk.js"
   ]
 }
