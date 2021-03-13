@@ -9,7 +9,7 @@ import { BrowserRouter, Route,  Switch } from "react-router-dom";
 
 function App() {
 const [Works] = useState ([
-  { title: 'React', descripition: 'Worked on this website called ', website: ' uxtroupe.com', descripitionLg: 'Worked on this website called uxtroupe.com Worked on this website called uxtroupe.com Worked on this website called uxtroupe.com Worked on this website called uxtroupe.com Worked on this website called uxtroupe.com Worked on this website called uxtroupe.com Worked on this website called uxtroupe.com', alt: 'Homepage Of UXTROUPE', image1: Homepage2x, image2: '' },
+  { title: 'Html, Css & JavaScript', descripition: 'Worked on this website called ', website: ' uxtroupe.com', descripitionLg: 'This site is a guide to non-designer to get into User Experience. This site is created by Mr.Balamurugan, I worked as a intern here and done some Html, Css and Javascript works for this website.', alt: 'Homepage Of UXTROUPE', image1: Homepage2x, image2: '' },
 ])
   return (
     <div id="body" className=" bg-black pb-12 px-6">
