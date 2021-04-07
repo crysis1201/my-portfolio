@@ -6,6 +6,10 @@ module.exports = {
       black: '#101010;',
       white: '#fefefe',
       gray: '#1a1a1a',
+      grey: '#2e2e2e',
+      focusgrey: '#424242',
+      submit: '#E63462',
+      hover: '#de2a58'
 
     },
     extend: {},

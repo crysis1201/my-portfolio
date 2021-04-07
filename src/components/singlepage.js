@@ -1,15 +1,23 @@
-const SinglePage = ({Works}) => {
+import { useParams } from "react-router";
+import Homepage from "../Images/Homepage.jpg"
+import useFetch from "./useFetch";
 
+
+const SinglePage = () => {
+  const { id } = useParams()
+  const { data:Works, error, isPending } =  useFetch('http://localhost:8000/blogs/'+id)
+  
   return (  
-  <div className="max-w-screen-lg mx-auto pt-12 text-3xl bg-black text-white text-center">
-    {Works.map((work) => (
-      <div>
-        <p className="text-3xl" >{work.title}</p>
-        <p className="text-lg pt-10" >{work.descripitionLg}</p>
-        <img className="profile mx-auto pt-10" src={work.image1} alt={work.alt}></img>   
-        <p className="italic text-base" >{ work.alt }</p>
-      </div>                                                                                                                                                                                                                                                                                                                                                                                                                                         
-      ))}
+  <div className="max-w-screen-lg m-auto h-screen pt-12 text-3xl bg-black text-white text-center">
+      {isPending && <div>Loading</div>}
+      { error && <div>{error}</div>}
+      {Works && 
+      <div className="my-auto" >
+        <p className="text-3xl" ></p>
+        <p className="text-lg pt-10" >{Works.descripitionLg}</p>
+        <img className="profile mx-auto pt-10" src={Homepage} alt={Works.alt}></img>   
+        <p className="italic text-base" >{Works.alt }</p>
+      </div>}                                                                                                                                                                                                                                                                                                                                                                                              
   </div>
     );
 }

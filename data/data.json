@@ -1,0 +1,24 @@
+{
+  "blogs": [
+    {
+      "title": "Html, Css & JavaScript",
+      "descripition": "Worked on this website called",
+      "website": "uxtroupe.com",
+      "descripitionLg": "This site is a guide to non-designer to get into User Experience. This site is created by Mr.Balamurugan, I worked as a intern here and done some Html, Css and Javascript works for this website.",
+      "alt": "Homepage Of UXTROUPE",
+      "image": "Homepage",
+      "url": "Homepage.jpg",
+      "id": 1
+    },
+    {
+      "title": "Html, Css & JavaScript",
+      "descripition": "Worked on this website called",
+      "website": "uxtroupe.com",
+      "descripitionLg": "This  is a guide to non-designer to get into User Experience. This site is created by Mr.Balamurugan, I worked as a intern here and done some Html, Css and Javascript works for this website.",
+      "alt": "Homepage Of UXTROUPE",
+      "image": "Homepage",
+      "url": "Homepage.jpg",
+      "id": 2
+    }
+  ]
+}
