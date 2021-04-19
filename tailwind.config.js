@@ -12,7 +12,14 @@ module.exports = {
       hover: '#de2a58'
 
     },
-    extend: {},
+    extend: {
+      maxWidth: {
+        '220': '220px'
+      },
+      screens: {
+        mobile: '520px'
+      }
+    },
   },
   variants: {
     extend: {},

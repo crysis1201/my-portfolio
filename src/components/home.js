@@ -1,9 +1,15 @@
 import profile from '../Images/IMG_7243.png'
+import '../hamburger.css'
+import { useState }  from 'react'
+
 const Home = () => {
+  const toggleClass = () => {
+    document.querySelector('.hamburger').classList.toggle('is-active')
+  }
     return (
     <div className=" bg-black">
        <div id="Home" className="max-w-screen-lg mx-auto pt-12" >
-          <header className="flex justify-between">
+          <header className="flex justify-between items-center">
               <div>
                 <p id="logo" className="lg:text-6xl text-5xl tracking-wider text-white" >
                   Eazhil amuthan
@@ -22,6 +28,13 @@ const Home = () => {
                 <p className="text-xl mr-7 uppercase text-white" >
                   Contact 
                 </p>
+              </div>
+              <div onClick={toggleClass} className="lg:hidden block">
+                <button class="hamburger hamburger--slider focus:outline-none" type="button">
+                    <span class="hamburger-box ">
+                      <span class="hamburger-inner"></span>
+                    </span>
+                </button>
               </div>
           </header>
           <div className="pt-40 lg:flex items-center">

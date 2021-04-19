@@ -21,3 +21,12 @@
 #logo {
     font-family: 'Bastian Sidney', sans-serif;
 }
+
+.works-image {
+    max-width: 220px;
+}
+
+.load {
+
+    transition: all ease-out 2s;
+}

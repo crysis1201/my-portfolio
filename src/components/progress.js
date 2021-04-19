@@ -3,7 +3,7 @@ import ProgressList from "./progresslist.js"
 
 const Progress = () => {
     const [levels] = useState ([
-        { title: 'HTML + CSS', percent: '85%', style: { backgroundColor: "#A69DFF", width: '85%', height: '100%', borderRadius: '20px 50px 50px 20px'} },
+        { title: 'HTML + CSS', percent: '85%', style: { backgroundColor: "#A69DFF", width: '85%', height: '100%', borderRadius: '20px 50px 50px 20px',} },
         { title: 'JavaScript', percent: '80%', style: { backgroundColor: "#FE5F55", width: '80%', height: '100%', borderRadius: '20px 50px 50px 20px'} },
         { title: 'Vue Js', percent: '60%', style: { backgroundColor: "#B3D89C", width: '60%', height: '100%', borderRadius: '20px 50px 50px 20px'} },
         { title: 'React', percent: '70%', style: { backgroundColor: "#FFE156", width: '70%', height: '100%', borderRadius: '20px 50px 50px 20px'} },
