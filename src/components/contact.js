@@ -1,10 +1,11 @@
-import profile from "../Images/Profile.jpg"
+import profile from "../Images/20210320_173043-01.jpeg"
 import InstagramIcon from '@material-ui/icons/Instagram';
 import MailIcon from '@material-ui/icons/Mail';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import { db } from "./firebase.js"
 import { useState } from "react";
+import { motion } from 'framer-motion'
 
 const Contact = () => {
     const [name, setName] = useState("");
@@ -79,9 +80,11 @@ const Contact = () => {
                 </form>
             </div>
             <div className="">
-                <div className="w-52 h-52 mt-10 overflow-hidden rounded-full mx-auto ">
-                    <img src={profile} ></img>
-                </div>
+                <motion.div drag dragConstraints={{ left: 30, right: 30, top: 10, bottom: 10 }} className="w-52 shadow-lg h-52 mt-10 overflow-hidden rounded-full mx-auto ">
+                    <motion.img 
+                     dragConstraints={{ left: 30, right: 30 }}
+                     src={profile} ></motion.img>
+                </motion.div>
                 <div className="text-white max-w-sm mt-10 mx-auto flex justify-around items-center" >
                     <InstagramIcon  fontSize="large"></InstagramIcon>
                     <TwitterIcon  fontSize="large"></TwitterIcon>

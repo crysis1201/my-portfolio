@@ -26,7 +26,10 @@
     max-width: 220px;
 }
 
-.load {
-
-    transition: all ease-out 2s;
-}
+.blur {
+    background: rgba(24, 24, 24, 0.9);
+    backdrop-filter: blur( 3px );
+    -webkit-backdrop-filter: blur( 3px );
+    border-radius: 10px;
+    border: 1px solid rgba(24, 24, 24, 0.18 );
+  }

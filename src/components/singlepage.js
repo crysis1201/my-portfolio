@@ -14,7 +14,7 @@ const SinglePage = () => {
       <div className="my-auto" >
         <p className="text-3xl" >{Works.title}</p>
         <p className="text-lg pt-10" >{Works.descripitionLg}</p>
-        <img className="mx-auto  max-w-sm pt-10" src={'../Images/' + Works.url} alt={Works.alt}></img>   
+        <img className="mx-auto max-w-md pt-10" src={'../Images/' + Works.url} alt={Works.alt}></img>   
         <p className="italic text-base pt-4" >{Works.alt }</p>
       </div>}                                                                                                                                                                                                                                                                                                                                                                                              
   </div>
@@ -22,4 +22,3 @@ const SinglePage = () => {
 }
 
 export default SinglePage;
-
