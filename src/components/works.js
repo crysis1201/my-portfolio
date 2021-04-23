@@ -26,11 +26,11 @@ const ProjectList = ({Works}) => {
                   <img className="max-w-220" src={'./Images/' + Work.url2} alt=""></img>
                 </Link>
                 </div>
-                <div data-aos="flip-up" data-aos-delay="600" data-aos-anchor-placement="bottom-bottom" className="mx-auto hidden lg:block">
+               <div data-aos="flip-up" data-aos-delay="600" data-aos-anchor-placement="bottom-bottom" className="mx-auto hidden lg:block">
                 <Link to={`/blogs/${Work.id}`}>
                   <img className="max-w-220" src={'./Images/' + Work.url3} alt=""></img>
                 </Link>
-                </div>
+                </div> 
             </div>
             <p className="text-white text-lg pb-12 pt-12">{Work.descripition}  <Link to={`/blogs/${Work.id}`}> <span>{Work.website}</span> </Link>  </p>                 
         </div>                                                                                                                                                                                                                                                                                                                                                                                                                                  
