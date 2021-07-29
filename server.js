@@ -1,22 +1,12 @@
-const jsonServer = require('json-server');
-const server = jsonServer.create();
-const middlewares = jsonServer.defaults();
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const path = require('path');
-const router = jsonServer.router('data.json');
 
 const sendGrid = require('@sendgrid/mail');
 
-const port = process.env.PORT || 5000;
-const jsonPort = process.env.PORT || 8000
-server.use(middlewares);
-server.use(router);
-
-server.listen(jsonPort);
-
 const app = express();
+const port = process.env.PORT || 5000;
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));

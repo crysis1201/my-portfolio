@@ -7,7 +7,7 @@ import useFetch from "./components/useFetch.js";
 import Contact from "./components/contact";
 
 function App() {
-  const { data: Works, isPending, error} = useFetch('http://localhost:3030/blogs')
+  const { data: Works, isPending, error} = useFetch('http://localhost:8000/blogs')
 
   return (
     <div id="body" className=" bg-black pb-12 px-6">
