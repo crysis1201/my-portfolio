@@ -22,7 +22,7 @@ const Contact = () => {
     const handleSubmit = (event) => {
         event.preventDefault();
         setFormInput({loader: true})
-        Axios.post('http://localhost:5000/api/email', formInput)
+        Axios.post('/api/email', formInput)
             .then(res => {
                 if(res.data.success) {
                     console.log('email Sent')
