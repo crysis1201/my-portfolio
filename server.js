@@ -10,14 +10,13 @@ const router = jsonServer.router('data.json');
 const sendGrid = require('@sendgrid/mail');
 
 const port = process.env.PORT || 5000;
-const jsonPort = process.env.PORT || 3030
-
-const app = express();
-
+const jsonPort = process.env.PORT || 8000
 server.use(middlewares);
 server.use(router);
 
 server.listen(jsonPort);
+
+const app = express();
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
