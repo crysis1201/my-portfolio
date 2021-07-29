@@ -1,0 +1,31 @@
+const handleSubmit = (event) => {
+        event.preventDefault();
+            db.collection('contacts')
+                .add({
+                    name: name,
+                    email: email,
+                    message: message
+                })
+                .then(() => {
+                    alert('message has been submitted')
+                })
+                .catch((error) => {
+                    console.log(error.message)
+                });      
+
+                Axios.post('http://localhost:3030/api/email', formInput)
+        .then(res => {
+            if(res.data.success) {
+                console.log('email Sent')
+                setFormInput({loader: false})
+            } else {
+                console.log('error')
+                setFormInput({loader: false})
+            }
+        })
+        .catch(err => {
+            console.log(err);
+
+            setFormInput({loader: false})
+        });
+}

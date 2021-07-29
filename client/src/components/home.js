@@ -1,6 +1,5 @@
 import profile from '../Images/IMG_7243.png'
 import '../hamburger.css'
-import { useState }  from 'react'
 import { motion } from 'framer-motion'
 
 const Home = () => {
@@ -11,7 +10,7 @@ const Home = () => {
   const toggleOpen = () => {
     document.querySelector('.blur').classList.toggle('hidden')
   }
-    return (
+  return (
     <div className=" bg-black">
        <div id="Home" className="max-w-screen-lg mx-auto pt-12" >
           <header className="flex justify-between items-center">
@@ -35,9 +34,9 @@ const Home = () => {
                 </p>
               </div>
               <div onClick={toggleOpen} className="lg:hidden inline-flex font-semibold items-center">
-                <button onClick={toggleClass} class="hamburger hamburger--slider focus:outline-none" type="button">
-                    <span class="hamburger-box ">
-                      <span class="hamburger-inner"></span>
+                <button onClick={toggleClass} className="hamburger hamburger--slider focus:outline-none" type="button">
+                    <span className="hamburger-box ">
+                      <span className="hamburger-inner"></span>
                     </span>
                 </button>
                 <p className="text-sm text-white -mt-2 -ml-1" >Menu</p>
