@@ -11,8 +11,6 @@ function App() {
 
   return (
     <div id="body" className=" bg-black pb-12 px-6">
-      <div className="absolute w-1/2 lg:max-w-screen-lg max-w-xs mx-auto h-full left-0 right-0  " >
-      </div>
       <BrowserRouter>
         <Switch>
           <Route path="/" exact >

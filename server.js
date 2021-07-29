@@ -5,14 +5,13 @@ const path = require('path');
 
 const sendGrid = require('@sendgrid/mail');
 
-
 const app = express();
 const port = process.env.PORT || 5000;
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-if (process.env.NODE_ENV === 'production') {
+if (process.env.NODE_ENV !== 'production') require('dotenv').config(); {
   app.use(express.static(path.join(__dirname, 'client/build')));
 
   app.get('*', function(req, res) {
@@ -42,9 +41,8 @@ app.get('/api', (req, res, next) => {
 
 app.post('/api/email', (req, res, next) => {
 
-    console.log(req.body);
+    sendGrid.setApiKey(process.env.SENDGRID_API_KEY)
 
-    sendGrid.setApiKey('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');
     const msg = {
         to: 'eazhilamuthan@gmail.com',
         from: req.body.email,
@@ -65,6 +63,5 @@ app.post('/api/email', (req, res, next) => {
             res.status(401).json({
                 success: false
             });
-
         });
 });

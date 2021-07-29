@@ -1,6 +1,7 @@
 import profile from '../Images/IMG_7243.png'
 import '../hamburger.css'
 import { motion } from 'framer-motion'
+import { Link } from 'react-router-dom'
 
 const Home = () => {
 
@@ -26,12 +27,12 @@ const Home = () => {
                 <a href="#Skills" className="text-xl mr-7 uppercase text-white" >
                   Skills
                 </a>
-                <a href="Works" className="text-xl mr-7 uppercase text-white" >
+                <a href="#Works" className="text-xl mr-7 uppercase text-white" >
                   Works
                 </a>
-                <p className="text-xl mr-7 uppercase text-white" >
+                <a href="#ContactMe" className="text-xl mr-7 uppercase text-white" >
                   Contact 
-                </p>
+                </a>
               </div>
               <div onClick={toggleOpen} className="lg:hidden inline-flex font-semibold items-center">
                 <button onClick={toggleClass} className="hamburger hamburger--slider focus:outline-none" type="button">
@@ -49,11 +50,11 @@ const Home = () => {
                 <a href="#Skills" className=" block text-center  text-xl pt-10 uppercase text-white" >
                   Skills
                 </a>
-                <a href="Works" className="block text-center  text-xl pt-10 uppercase text-white" >
+                <a href="#Works" className="block text-center  text-xl pt-10 uppercase text-white" >
                   Works
                 </a>
-                <a href="Works" className="block text-center text-xl pt-10 pb-10 uppercase text-white" >
-                  Contact
+                <a href="#ContactMe" className="block text-center text-xl pt-10 pb-10 uppercase text-white" >
+                  Contact Me
                 </a>
           </div>
           
@@ -62,6 +63,7 @@ const Home = () => {
                 <p className="font-extralight" >
                    Hi, I'm Eazhilamuthan, Co-Founder of Tweak Enterprises, a Front End Web Developer. I enjoy creating designs and making them real-life. 
                 </p>
+                <Link to="/Resume.pdf" target="_blank" download><div className="text-lg bg-submit w-32 mt-8 hover:bg-grey rounded-md font-semibold text-center py-2 px-1">My Resume</div></Link>
               </div>
               <div className="Rectangle-2 p-1 lg:pt-1 mt-12 max-w-xs mx-auto lg:max-w-none">
                   <motion.img drag dragConstraints={{ left: 10, right: 10, top: 10, bottom: 10 }} dragElastic={0.2} className=" mx-auto" src={profile} alt=""></motion.img>

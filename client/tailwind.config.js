@@ -9,8 +9,8 @@ module.exports = {
       grey: '#2e2e2e',
       focusgrey: '#424242',
       submit: '#E63462',
-      hover: '#de2a58'
-
+      hover: '#de2a58',
+      green: '#21db9a'
     },
     extend: {
       maxWidth: {
