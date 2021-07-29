@@ -4,7 +4,7 @@ import useFetch from "./useFetch";
 
 const SinglePage = () => {
   const { id } = useParams()
-  const { data:Works, error, isPending } =  useFetch('/blogs/'+id)
+  const { data:Works, error, isPending } =  useFetch('http://localhost:3030/blogs/'+id)
   
   return (  
   <div className="max-w-screen-lg m-auto h-screen pt-12 text-3xl bg-black text-white text-center">
