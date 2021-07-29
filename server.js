@@ -5,6 +5,21 @@ const path = require('path');
 
 const sendGrid = require('@sendgrid/mail');
 
+const jsonServer = require('json-server');
+const server = jsonServer.create();
+const router = jsonServer.router('data.json');
+const middlewares = jsonServer.defaults();
+const port2 = process.env.PORT || 8000;
+server.use(middlewares);
+server.use(router);
+server.listen(port2, error => {
+    if(error) throw error;
+    console.log('server running on port ' + port2)
+});
+server.get('/blogs', (req, res, next) => {
+    res.send('API Status: I\'m awesome')
+});
+
 const app = express();
 const port = process.env.PORT || 5000;
 
