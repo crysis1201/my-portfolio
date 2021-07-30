@@ -2,15 +2,16 @@ import profile from '../Images/IMG_7243.png'
 import './hamburger.css'
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
-
+import "./animation.css"
+import { useState } from 'react'
 const Home = () => {
 
-  const toggleClass = () => {
-    document.querySelector('.hamburger').classList.toggle('is-active')
+  const [toggleOpen, setToggleOpen] = useState(true)
+
+  const handleClick = () => {
+    setToggleOpen(!toggleOpen)
   }
-  const toggleOpen = () => {
-    document.querySelector('.blur').classList.toggle('hidden')
-  }
+
   return (
     <div className=" bg-black">
        <div id="Home" className="max-w-screen-lg mx-auto pt-12" >
@@ -31,8 +32,8 @@ const Home = () => {
                     Contact 
                   </a>
                 </div>
-                <div onClick={toggleOpen} className="lg:hidden inline-flex font-semibold items-center">
-                  <button onClick={toggleClass} className="hamburger hamburger--slider focus:outline-none" type="button">
+                <div onClick={handleClick} className="lg:hidden inline-flex font-semibold items-center">
+                  <button className={`${toggleOpen ? '' : "is-active"} hamburger hamburger--slider focus:outline-none`} type="button">
                       <span className="hamburger-box ">
                         <span className="hamburger-inner"></span>
                       </span>
@@ -40,7 +41,7 @@ const Home = () => {
                   <p className="text-sm text-white -mt-2 -ml-1" >Menu</p>
                 </div>
             </header>
-            <div className="lg:hidden m-auto left-0 right-0 z-10 absolute w-11/12 h-auto mt-4 blur hidden transition-opacity">
+            <motion.div layout className={`${toggleOpen ? 'hidden fadeOut' : "fadeIn"} animated faster lg:hidden m-auto left-0 right-0 z-10 absolute w-11/12 h-auto mt-4 blur`}>
                   <a href="#Skills" className=" block text-center  text-xl pt-10 uppercase text-white" >
                     Skills
                   </a>
@@ -50,9 +51,9 @@ const Home = () => {
                   <a href="#ContactMe" className="block text-center text-xl pt-10 pb-10 uppercase text-white" >
                     Contact Me
                   </a>
-            </div>
+            </motion.div>
           
-          <div className="pt-40 lg:flex items-center">
+          <div className="lg:pt-40 pt-20 lg:flex items-center">
               <div className="text-white lg:max-w-lg max-w-xl lg:mx-0 mx-auto lg:text-left text-center leading-loose text-2xl ">
                 <p className="font-extralight" >
                    Hi, I'm Eazhilamuthan, Co-Founder of Tweak Enterprises, a Front End Web Developer. I enjoy creating designs and making them real-life. 

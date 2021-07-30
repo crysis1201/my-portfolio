@@ -14,7 +14,7 @@ const SinglePage = () => {
       <div className="my-auto" >
         <p className="text-3xl" >{Works.title}</p>
         <p className="text-lg pt-10" >{Works.descripitionLg}</p>
-        <img className="mx-auto max-w-md pt-10" src={'../Images/' + Works.url} alt={Works.alt}></img>   
+        <img className="mx-auto w-96 pt-10" src={'../Images/' + Works.url} alt={Works.alt}></img>   
         <a href={Works.website}><p className="italic text-base pt-4" >{Works.alt}</p></a>
       </div>}                                                                                                                                                                                                                                                                                                                                                                                              
   </div>
