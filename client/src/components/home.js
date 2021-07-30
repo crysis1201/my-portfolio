@@ -14,49 +14,43 @@ const Home = () => {
   return (
     <div className=" bg-black">
        <div id="Home" className="max-w-screen-lg mx-auto pt-12" >
-          <header className="flex justify-between items-center">
-              <div>
-                <p id="logo" className="lg:text-6xl text-5xl tracking-wider text-white" >
-                  Eazhil amuthan
-                </p>
-              </div>
-              <div className=" lg:flex hidden justify-between items-center ">
-                <a href="#Home" className="text-xl mr-7 uppercase text-white" >
-                  Home
-                </a>
-                <a href="#Skills" className="text-xl mr-7 uppercase text-white" >
-                  Skills
-                </a>
-                <a href="#Works" className="text-xl mr-7 uppercase text-white" >
-                  Works
-                </a>
-                <a href="#ContactMe" className="text-xl mr-7 uppercase text-white" >
-                  Contact 
-                </a>
-              </div>
-              <div onClick={toggleOpen} className="lg:hidden inline-flex font-semibold items-center">
-                <button onClick={toggleClass} className="hamburger hamburger--slider focus:outline-none" type="button">
-                    <span className="hamburger-box ">
-                      <span className="hamburger-inner"></span>
-                    </span>
-                </button>
-                <p className="text-sm text-white -mt-2 -ml-1" >Menu</p>
-              </div>
-          </header>
-          <div className="lg:hidden m-auto left-0 right-0 z-10 absolute w-11/12 h-auto mt-4 blur hidden transition-opacity">
-                <a href="#Home" className="block text-center text-xl pt-10 uppercase text-white" >
-                  Home
-                </a>
-                <a href="#Skills" className=" block text-center  text-xl pt-10 uppercase text-white" >
-                  Skills
-                </a>
-                <a href="#Works" className="block text-center  text-xl pt-10 uppercase text-white" >
-                  Works
-                </a>
-                <a href="#ContactMe" className="block text-center text-xl pt-10 pb-10 uppercase text-white" >
-                  Contact Me
-                </a>
-          </div>
+            <header className="flex justify-between items-center">
+                <div>
+                  <p id="logo" className="lg:text-6xl text-5xl tracking-wider text-white" >
+                    Eazhil amuthan
+                  </p>
+                </div>
+                <div className=" lg:flex hidden justify-between items-center ">
+                  <a href="#Skills" className="text-xl mr-7 uppercase text-white" >
+                    Skills
+                  </a>
+                  <a href="#Works" className="text-xl mr-7 uppercase text-white" >
+                    Works
+                  </a>
+                  <a href="#ContactMe" className="text-xl mr-7 uppercase text-white" >
+                    Contact 
+                  </a>
+                </div>
+                <div onClick={toggleOpen} className="lg:hidden inline-flex font-semibold items-center">
+                  <button onClick={toggleClass} className="hamburger hamburger--slider focus:outline-none" type="button">
+                      <span className="hamburger-box ">
+                        <span className="hamburger-inner"></span>
+                      </span>
+                  </button>
+                  <p className="text-sm text-white -mt-2 -ml-1" >Menu</p>
+                </div>
+            </header>
+            <div className="lg:hidden m-auto left-0 right-0 z-10 absolute w-11/12 h-auto mt-4 blur hidden transition-opacity">
+                  <a href="#Skills" className=" block text-center  text-xl pt-10 uppercase text-white" >
+                    Skills
+                  </a>
+                  <a href="#Works" className="block text-center  text-xl pt-10 uppercase text-white" >
+                    Works
+                  </a>
+                  <a href="#ContactMe" className="block text-center text-xl pt-10 pb-10 uppercase text-white" >
+                    Contact Me
+                  </a>
+            </div>
           
           <div className="pt-40 lg:flex items-center">
               <div className="text-white lg:max-w-lg max-w-xl lg:mx-0 mx-auto lg:text-left text-center leading-loose text-2xl ">
