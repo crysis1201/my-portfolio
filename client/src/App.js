@@ -7,7 +7,7 @@ import useFetch from "./components/useFetch.js";
 import Contact from "./components/contact";
 
 function App() {
-  const { data: Works, isPending, error} = useFetch('https://eazhil-portfolio-data.herokuapp.com/blogs')
+  const { data: Works, isPending, error} = useFetch('https://eazhil-portfolio-data.herokuapp.com/works')
 
   return (
     <div id="body" className=" bg-black pb-12 px-6">
@@ -16,8 +16,8 @@ function App() {
           <Route path="/" exact >
             <Home />
             <Progress />
-            { error && <div>{error}</div>}
-            {isPending && <div>Loading...</div>}
+            { error && <div className="text-white">{error}</div>}
+            {isPending && <div className="text-white" >Loading...</div>}
             {Works && <Work Works={Works} />}
             <Contact></Contact>
           </Route>
