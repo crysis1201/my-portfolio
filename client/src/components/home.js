@@ -63,7 +63,7 @@ const Home = () => {
                 <p className="font-extralight" >
                    Hi, I'm Eazhilamuthan, Co-Founder of Tweak Enterprises, a Front End Web Developer. I enjoy creating designs and making them real-life. 
                 </p>
-                <Link to="/Resume.pdf" target="_blank" download><div className="text-lg mx-auto bg-submit w-32 mt-8 hover:bg-grey rounded-md font-semibold text-center py-2 px-1">My Resume</div></Link>
+                <Link to="/Resume.pdf" target="_blank" download><div className="text-lg lg:mx-0 mx-auto bg-submit w-32 mt-8 hover:bg-grey rounded-md font-semibold text-center py-2 px-1">My Resume</div></Link>
               </div>
               <div className="Rectangle-2 p-1 lg:pt-1 mt-12 max-w-xs mx-auto lg:max-w-none">
                   <motion.img drag dragConstraints={{ left: 10, right: 10, top: 10, bottom: 10 }} dragElastic={0.2} className=" mx-auto" src={profile} alt=""></motion.img>
