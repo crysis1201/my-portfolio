@@ -10,23 +10,23 @@ const ProjectList = ({Works}) => {
       {Works.map(({id, title, url, url1, url2, url3, descripition, website, websiteName}) => (
         <div key={id}>
             <p className="text-white"><Link className="px-5 py-2" to={`/blogs/${id}`}>{title}</Link></p>
-            <div data-aos="opacity" className="pt-12 flex justify-between items-center">
-                <div  data-aos-delay="300" data-aos-anchor-placement="bottom-bottom" className="mx-auto">
+            <div className="pt-12 flex justify-between items-center">
+                <div  data-aos-delay="300" data-aos="fade-right" className="mx-auto">
                 <Link  to={`/blogs/${id}`}>
                   <img className="max-w-220" src={'./Images/' + url} alt=""></img>
                 </Link>
                 </div>
-                <div  data-aos-delay="400" data-aos-anchor-placement="bottom-bottom" className="mx-auto mobile:block hidden">
+                <div  data-aos-delay="400" data-aos="fade-right" className="mx-auto mobile:block hidden">
                 <Link to={`/blogs/${id}`}>
                   <img className="max-w-220" src={'./Images/' + url1} alt=""></img>
                 </Link>
                 </div>
-                <div  data-aos-delay="500" data-aos-anchor-placement="bottom-bottom" className="mx-auto lg:block hidden">
+                <div  data-aos-delay="500" data-aos="fade-right" className="mx-auto lg:block hidden">
                 <Link to={`/blogs/${id}`}>
                   <img className="max-w-220" src={'./Images/' + url2} alt=""></img>
                 </Link>
                 </div>
-               <div data-aos-delay="600" data-aos-anchor-placement="bottom-bottom"  className={`${url3 ? "mx-auto hidden lg:block" : "hidden"}`}>
+               <div data-aos-delay="600" data-aos="fade-right"  className={`${url3 ? "mx-auto hidden lg:block" : "hidden"}`}>
                 <Link to={`/blogs/${id}`}>
                   <img className={"max-w-220"} src={'./Images/' + url3} alt=""></img>
                 </Link>
