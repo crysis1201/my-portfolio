@@ -1,5 +1,5 @@
 import profile from '../Images/IMG_7243.png'
-import '../hamburger.css'
+import './hamburger.css'
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 
